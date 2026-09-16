@@ -6,7 +6,7 @@ node {
 			url: 'https://github.com/pipelineascodecourse/pipeline-agent-dockerfile-filename.git']]
 		])
 
-		def myCustomUbuntuImage = docker.build("my-ubuntu:my-latest","--file myCustomNameDockerfile .")
+		def myCustomUbuntuImage = docker.build("my-ubuntu:my-latest","--file myCustomName3Dockerfile .")
 
 		myCustomUbuntuImage.inside {
 			sh 'cat /etc/lsb-release'
